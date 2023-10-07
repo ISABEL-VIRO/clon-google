@@ -1,0 +1,85 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root{
+  --white:#ffffff;
+  --black:#000000;
+}
+
+html{
+  /* Medida para usar rem */
+  font-size: 62.5%; 
+  background-image: url(https://images.pexels.com/photos/8721342/pexels-photo-8721342.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  font-family: 'Roboto', sans-serif;
+}
+body{
+  font-size: 1.6rem;
+  
+}
+
+header,footer{
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 100%;
+  padding: 0 33px;
+ 
+}
+
+
+.menu{
+  padding: 33px;
+  height: 10vh;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  list-style: none;
+  column-gap: 1.6rem;
+}
+
+.icono-menu-cuadros{
+  width:25px;
+}
+
+
+.menu li:nth-child(4){
+  color: var(--white);
+  width: 50px;
+  height:50px;
+  background-color: var(--black);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+.menu li:nth-child(4) > a{
+  color: var(--white);
+  font-size: 2rem;
+  background-color: var(--black);
+
+}
+
+main{
+  height: 80vh;
+}
+
+a{
+  text-decoration: none;
+  color: var(--black);
+}
+
+
+footer{
+  height: 10vh;
+}
+
+
+
