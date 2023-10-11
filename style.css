@@ -21,11 +21,12 @@ html{
 }
 body{
   font-size: 1.6rem;
+  color: var(--white);
   
 }
 
 header,footer{
-  background-color: rgba(255, 255, 255, 0.5);
+ 
   width: 100%;
   padding: 0 33px;
  
@@ -42,16 +43,17 @@ header,footer{
   column-gap: 1.6rem;
 }
 
-.icono-menu-cuadros{
-  width:25px;
-}
+.icono-menu{
+  width:22px;
+  
+ }
 
 
 .menu li:nth-child(4){
   color: var(--white);
-  width: 50px;
-  height:50px;
-  background-color: var(--black);
+  width: 30px;
+  height:30px;
+  background-color: plum;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -63,23 +65,102 @@ header,footer{
 .menu li:nth-child(4) > a{
   color: var(--white);
   font-size: 2rem;
-  background-color: var(--black);
+
 
 }
 
 main{
   height: 80vh;
 }
+.container,.content{
+  display: flex;
+  justify-content: center ;
+  align-items: center;
+}
+
+.content{
+  flex-direction: column;
+  gap: 1.6rem;
+  width:33%;
+  
+  padding: 0;
+}
+
+form{
+  width: 100%;
+}
+
+.input-buscador{
+  display: flex;
+  align-items: center;
+  background-color: var(--white);
+  border-radius: 5rem;
+  height: 4.0rem;
+  width: 100%;
+  padding: 1.6rem;
+  justify-content:space-between;
+}
+
+
+
+label {
+  display: flex;
+  flex-direction: row;
+  justify-content: center ;
+  align-items: center;
+}
+.icono-lupa img, .icono-microfono img{
+  width: 22px;
+}
+
+.input{
+  width:80%;
+  border: none;
+}
+
 
 a{
   text-decoration: none;
-  color: var(--black);
+  color: var(--white);
 }
 
+
+a:hover{
+  cursor: pointer;
+}
+
+.links-tipo-de-busqueda{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content:space-around;
+  
+  
+}
+
+.links-tipo-de-busqueda a{
+  color: var(--white);
+}
 
 footer{
   height: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
+.footer-section-der ul,.footer-section-izq ul{
+  display: flex;
+  flex-direction: row;
+  gap: 22px;
+
+}
+
+
+.footer-section-der ul li,.footer-section-izq li{
+  list-style: none;
+  display: flex;
+}
 
 
