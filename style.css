@@ -1,58 +1,75 @@
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-:root{
-  --white:#ffffff;
-  --black:#000000;
+:root {
+  --white: #ffffff;
+  --black: #000000;
 }
 
-html{
+html {
   /* Medida para usar rem */
-  font-size: 62.5%; 
+  font-size: 62.5%;
   background-image: url(https://images.pexels.com/photos/8721342/pexels-photo-8721342.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
-  
+
   background-repeat: no-repeat;
   background-size: cover;
-
+  background-position: center;
+ 
   font-family: 'Roboto', sans-serif;
 }
-body{
+
+body {
   font-size: 1.6rem;
   color: var(--white);
-  
+
 }
 
-header,footer{
- 
+
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+header,
+footer {
+  height: 10vh;
   width: 100%;
   padding: 0 33px;
- 
+
 }
 
-
-.menu{
-  padding: 33px;
-  height: 10vh;
+header nav {
   display: flex;
   justify-content: end;
+  align-items: center;
+}
+
+header nav .nav-right-section {
+  padding: 33px;
+  height: auto;
+  display: flex;
+  justify-content: center;
   align-items: center;
   list-style: none;
   column-gap: 1.6rem;
 }
 
-.icono-menu{
-  width:22px;
-  
- }
+.icono-menu {
+  width: 22px;
+}
 
 
-.menu li:nth-child(4){
+nav .nav-right-section li:nth-child(4) {
   color: var(--white);
   width: 30px;
-  height:30px;
+  height: 30px;
   background-color: plum;
   border-radius: 50%;
   display: flex;
@@ -62,95 +79,125 @@ header,footer{
 }
 
 
-.menu li:nth-child(4) > a{
+nav .nav-right-section li:nth-child(4)>a {
   color: var(--white);
   font-size: 2rem;
 
 
 }
 
-main{
+main {
   height: 80vh;
-}
-.container,.content{
   display: flex;
-  justify-content: center ;
+  justify-content: center;
   align-items: center;
-}
-
-.content{
   flex-direction: column;
   gap: 1.6rem;
-  width:33%;
-  
-  padding: 0;
 }
 
-form{
-  width: 100%;
-}
-
-.input-buscador{
+main .section-main-logo{
+  width: 530px;
+  margin: 0 auto;
+  margin-bottom: 35px;
   display: flex;
-  align-items: center;
-  background-color: var(--white);
-  border-radius: 5rem;
-  height: 4.0rem;
-  width: 100%;
-  padding: 1.6rem;
-  justify-content:space-between;
+  justify-content: center;
 }
 
+main .section-main-logo img {
+  width: 300px;
+}
 
+main .section-main-input{
+  width:530px;
+  margin-bottom: 15px;
+ 
+}
 
-label {
+main .main-input-container{
   display: flex;
-  flex-direction: row;
-  justify-content: center ;
+  justify-content: space-around;
   align-items: center;
+ width: 525px;
+ border-radius: 20px;
+ border: solid 1px #dfe1e5;
+ background-color: var(--white);
+ padding: 0 10px;
+
 }
-.icono-lupa img, .icono-microfono img{
-  width: 22px;
+main .main-input-container:hover{
+ box-shadow: 0 1px 6px 0 #20212447;
+ border-color: #dfe1e500;
 }
 
-.input{
-  width:80%;
+main .main-input-container input{
+  width: 450px;
+  height: 40px;
   border: none;
+  outline: none;
 }
 
+main .main-input-container .icono-search{
+  background-image: url(./img/icons/lupa.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 18px;
+  height: 18px;
+ margin: 8px;
 
-a{
-  text-decoration: none;
-  color: var(--white);
 }
 
-
-a:hover{
+main .main-input-container .icono-microfono {
+  background-image: url(./img/icons/microfono.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 18px;
+  height: 18px;
   cursor: pointer;
+  margin: 8px;
+
 }
 
-.links-tipo-de-busqueda{
+main .section-main-buttons{
+  width: 530px;
   display: flex;
+  justify-content: space-around;
   align-items: center;
+  
+ }
+
+main .section-main-buttons  a {
+  background-color: #f2f2f2;
+  border: none;
+  color: #5f6368;
+  font-size: 1.4rem;
+  border-radius: 4px;
+  padding: 10px 10px ;
+}
+
+main .section-main-buttons  a:hover{
+  border: 1px solid #c6c6c6;
+  box-shadow: 0 1px 1px var(--black) ;
+  cursor:pointer;
+
+} 
+
+footer {
   width: 100%;
-  justify-content:space-around;
-  
-  
-}
-
-.links-tipo-de-busqueda a{
-  color: var(--white);
-}
-
-footer{
   height: 10vh;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+
+  /* Aseguramos que el footer este siempre abajo de la pagina  */
+  position: absolute;
+  bottom: 0;
 }
 
-.footer-section-der ul,.footer-section-izq ul{
+.footer-section-der ul,
+.footer-section-izq ul {
   display: flex;
   flex-direction: row;
   gap: 22px;
@@ -158,9 +205,8 @@ footer{
 }
 
 
-.footer-section-der ul li,.footer-section-izq li{
+.footer-section-der ul li,
+.footer-section-izq li {
   list-style: none;
   display: flex;
 }
-
-

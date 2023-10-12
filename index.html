@@ -4,62 +4,56 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Clone</title>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-  <title>Clon Google</title>
 </head>
 
 <body>
   <header>
     <nav>
-      <ul class="menu">
+      <ul class="nav-right-section">
         <li><a href="#">Gmail</a></li>
         <li><a href="#">Imagenes</a></li>
         <li><a>
-            <img class="icono icono-menu" src="./img/icons/menu.png " alt="Icono de menu desplegable">
+            <img class="icono icono-menu" src="https://static.thenounproject.com/png/756729-200.png" alt="Icono de menu desplegable">
           </a></li>
         <li><a href="#"> I </a></li>
       </ul>
     </nav>
   </header>
 
-  <main class="container">
-    <section class="content">
+  <main>
 
-      <figure class="img-logo">
-        <img src="" alt="Imagen del logo del">
-      </figure>
-
-      <form action="#">
-
-        <label for="buscador">
-          <div class="input-buscador">
-
-            <figure class="icono icono-lupa">
-              <img src="./img/icons/lupa.png" alt="icono de lupa">
-            </figure>
-
-            <input type="text" placeholder="Escribe tu busqueda" name="buscador" class="input">
-
-            <figure class="icono icono-microfono">
-              <a href="#">  <img src="./img/icons/microfono.png" alt="icono de microfono" title="Buqueda por voz"></a>
-             
-            </figure>
-
-          </div>
-
-        </label>
-
-      </form>
-
-      <div class="links-tipo-de-busqueda">
-        <a class="btn" href="#">Buscar Google</a>
-        <a class="btn" href="#">Voy a tener suerte</a>
-      </div>
-
+    <section class="section-main-logo">
+      <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Logo de Google">
     </section>
+
+    <section class="section-main-input">
+      <div class="main-input-container">
+
+        <span  class="icono-search"> 
+         
+        </span>
+
+        <input type="text" placeholder="Escribe tu busqueda" name="buscador" class="input">
+
+        <a  class="icono-microfono" href="#" title="Busqueda por voz"> 
+           
+          </a>
+
+      </div>
+    </section>
+
+    <section  class="section-main-buttons">
+    
+        <a class="btn" href="#">Buscar con Google</a>
+        <a class="btn" href="#">Me siento con suerte</a>
+  
+    </section>
+
   </main>
 
   <footer>
